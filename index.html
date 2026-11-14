@@ -50,7 +50,7 @@
   </div>
   <div id="bookmarks">
     <button data-url="https://en.wikipedia.org">Wikipedia</button>
-    <button data-url="https://duckduckgo.com">DuckDuckGo</button>
+    <button data-url="https://en.wikipedia.org/wiki/Special:Random">Random Page</button>
     <button data-url="https://example.com">Example</button>
     <button data-url="https://www.openstreetmap.org">Maps</button>
   </div>
@@ -73,7 +73,7 @@
     if (!text) return '';
     if (/^https?:\/\//i.test(text)) return text;
     if (/^[\w-]+(\.[\w-]+)+(\/.*)?$/.test(text)) return 'https://' + text;
-    return 'https://duckduckgo.com/?q=' + encodeURIComponent(text);
+    return 'https://en.wikipedia.org/w/index.php?search=' + encodeURIComponent(text);
   }
 
   function newTab(url) {
