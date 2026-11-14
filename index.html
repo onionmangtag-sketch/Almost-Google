@@ -46,7 +46,7 @@
     <button class="navbtn" id="forward" title="Forward">&#8594;</button>
     <button class="navbtn" id="reload" title="Reload">&#8635;</button>
     <button class="navbtn" id="home" title="Home">&#8962;</button>
-    <input id="address" type="text" placeholder="Search or type a URL" spellcheck="false" autocomplete="off">
+    <input id="address" type="text" placeholder="Search Wikipedia or type a URL" spellcheck="false" autocomplete="off">
   </div>
   <div id="bookmarks">
     <button data-url="https://en.wikipedia.org">Wikipedia</button>
@@ -85,7 +85,7 @@
 
     const home = document.createElement('div');
     home.className = 'home';
-    home.innerHTML = '<div class="logo"><span>A</span><span>l</span><span>m</span><span>o</span><span>s</span><span>t</span></div><input class="homesearch" placeholder="Search the web or type a URL"><div class="note">Some sites refuse to load inside other pages. If a page stays blank, that site is blocking it.</div>';
+    home.innerHTML = '<div class="logo"><span>A</span><span>l</span><span>m</span><span>o</span><span>s</span><span>t</span></div><input class="homesearch" placeholder="Search Wikipedia or type a URL"><div class="note">Some sites refuse to load inside other pages. If a page stays blank, that site is blocking it.</div>';
     const frame = document.createElement('iframe');
     frame.setAttribute('referrerpolicy', 'no-referrer');
     content.appendChild(home);
